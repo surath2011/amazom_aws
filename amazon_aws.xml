@@ -1293,6 +1293,7 @@ addteststep.run(testRunner,addstepcontext)
 def jsonoutput = testRunner.testCase.testSteps['getproducts'].getPropertyValue('Response')
 def parsedjson = new JsonSlurper().parseText(jsonoutput)
 Properties properties = new Properties()
+//log.info ${projectDir}
 File propertiesFile = new File("C:\\Users\\surathsvst\\Desktop\\testData.properties")
 propertiesFile.withInputStream {
     properties.load(it)
