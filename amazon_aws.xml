@@ -1,0 +1,1424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="97c77700-e426-4516-afd7-0e6f02d039ed" created="2.6.0" activeEnvironment="Default" name="amazonaws-get-calls" updated="2.6.0 2019-01-14T14:47:06Z" encryptionMode="Not encrypted" resourceRoot="" runType="PARALLELL" abortOnError="false" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="79c71323-cc28-48fe-92ad-43518e8b7ce1" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://dummy.restapiexample.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://dummy.restapiexample.com</con:endpoint>
+    </con:endpoints>
+    <con:environmentSpec>
+      <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+    <con:resource name="Create" path="/api/v1/create" id="162ce2f6-0485-4be7-a152-42073e454b2d">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Create" id="233b8a22-45c6-44e5-9db7-be6479001e05" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html;charset=UTF-8</con:mediaType>
+          <con:status>500 404</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>text/html</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="a2d8613a-277a-4464-80a8-870b66e5acb7" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://dummy.restapiexample.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+          <con:environmentSpec>
+            <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="c7ce635f-5d29-4dc9-9ca7-ceceb07cee7a">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="6d7bd731-d374-48bb-ab73-24bc1bfee4a3" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 1" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
+    <con:environmentSpec>
+      <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+    <con:resource name="/api/v1/employee/1" path="/api/v1/employee/5436" id="c81e83d2-aac5-471e-a80c-c9dc62fd6ba6">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="GET" id="412ef813-d38a-4c22-84e1-d0778c117285" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:request name="GET Request" id="52bbd930-f791-4044-bd56-65a07d26bc4b" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://dummy.restapiexample.com/</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://dummy.restapiexample.com/api/v1/employee/13025</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+          <con:environmentSpec>
+            <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="c7ce635f-5d29-4dc9-9ca7-ceceb07cee7a">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="create" path="/api/v1/create" id="a6d4d182-935d-4686-8ae0-5686eb073711">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="5c6622a7-c96f-4651-b196-873370ba0d27" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="246d2851-ca8d-4b83-bf32-3c2fa0112303" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://dummy.restapiexample.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="cc4c765c-ed45-417c-b741-72be007ffce5" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Numberofblocks" path="/numberofblocks/" id="f39da6d8-c2b4-44de-ae48-56cb4d9fe269">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Numberofblocks 1" id="a3f8b6f1-5428-4ed4-89be-19545452108d" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="9cebc0aa-ccfd-44c9-8a44-37901483c1ce" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="getassets" path="/getassets" id="4e6978dd-f316-4da5-87a1-671fc27e69ca">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="01b3115b-6124-49ec-ad60-6d202c9f1d67" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="2d1224e5-71ab-46f2-96aa-613062641f85" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="getproducts" path="/getproducts/" id="f8264c8f-9486-4629-9b38-d4b4f31ea920">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="ee6b838a-678a-4f0f-8f30-915e55c2f49d" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="afdc500e-2232-4a3d-910c-a60f4c5ec6fe" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="84ef2690-b75f-40be-b3e2-f735218673c5" path="/getasset/84ef2690-b75f-40be-b3e2-f735218673c5" id="8e2df863-2884-446f-9aa5-5c9a5e8ecbfb">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="d4e2ec12-793b-4b0c-9ab6-c6ac7c347c0d" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/plain; charset=utf-8</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="f5d0c4d1-a04f-49ac-8638-2c0cab757809" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com/</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+          <con:parameterOrder/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="d265a918099ac17f077cc9487308c4a119c14d1d704bc6305ce0c0c745fe8d25" path="/asset/d265a918099ac17f077cc9487308c4a119c14d1d704bc6305ce0c0c745fe8d25" id="d7a801fc-f4fb-4c36-b446-162c0f36dbed">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="1a24dd9d-915b-46b1-9948-18c44db67fec" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:d26="http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com/asset/d265a918099ac17f077cc9487308c4a119c14d1d704bc6305ce0c0c745fe8d25">d26:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="2a04b125-0eaf-40c7-9a38-2fb8f79c7c51" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="d265a918099ac17f077cc9487308c4a119c14d1d704bc6305ce0c0c745fe8d25" path="/assetwith/d265a918099ac17f077cc9487308c4a119c14d1d704bc6305ce0c0c745fe8d25" id="c9c621cd-946a-4e13-a746-0480cb327c0d">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="dd1d7bb3-643f-4e20-ac03-31dcf8362d48" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:d26="http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com/assetwith/d265a918099ac17f077cc9487308c4a119c14d1d704bc6305ce0c0c745fe8d25">d26:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="7ce6caa5-78e3-4516-ab10-e87a11dcbea5" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="abcd" path="/asset/abcd" id="1b6f401b-966d-449e-9100-e9481350e958">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="de3dc87e-2417-479a-95ec-5db4b9865884" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=utf-8</con:mediaType>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="387e0ff9-10d9-47bf-99e3-f365dbd5237c" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="4a6a8dd6-c81a-4ec8-8792-b7bb5aedcd65" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+    </con:endpoints>
+    <con:resource name="B2b5dc1d-28e9-4cc1-bef4-ece5f65ce65d" path="/getasset/b2b5dc1d-28e9-4cc1-bef4-ece5f65ce65d/" id="956a7e16-83d8-480c-8a80-f10a82bd803f">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="B2b5dc1d-28e9-4cc1-bef4-ece5f65ce65d 1" id="6e1af6f0-bc43-4ab7-aa25-168eeef7750f" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="e068ba72-1640-4213-b7eb-627f875cb499" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com/getasset/b2b5dc1d-28e9-4cc1-bef4-ece5f65ce65d/</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="b2c6a2f4-566f-4c4f-ab19-7f721638aaa5" name="http://dummy.restapiexample.com TestSuite">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="90b59271-871b-4b4b-acec-e00b178eb3ca" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="http://dummy.restapiexample.com TestCase 1" searchProperties="true" timeout="0" maxResults="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="Request 1" id="e761b696-c306-4f63-824a-27bf8059ebec">
+        <con:settings/>
+        <con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/create" methodName="Create" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Request 1" id="a2d8613a-277a-4464-80a8-870b66e5acb7" mediaType="application/json" postQueryString="false" fullPath="/product/api/v4.0/foo">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Content-Type" value="text/html" xmlns="http://eviware.com/soapui/config"/></con:setting>
+              <con:setting id="RecordRequestRepresentations">true</con:setting>
+            </con:settings>
+            <con:endpoint>http://dummy.restapiexample.com</con:endpoint>
+            <con:request>{"name":"INDIA","salary":"4500","age":"66"}</con:request>
+            <con:originalUri>http://dummy.restapiexample.com/api/v1/create</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="05a80864-8c74-4b51-8818-7d3bbb09fba1" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="95d87969-da1c-4158-afbd-0655a69df197" name="Response SLA">
+              <con:configuration>
+                <SLA>2000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="GroovyScriptAssertion" id="f21246c0-39b9-42b8-8daa-11e6ac9a7f92" name="Script Assertion">
+              <con:configuration/>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Administrator</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:environmentSpec>
+              <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="c7ce635f-5d29-4dc9-9ca7-ceceb07cee7a">
+                <con:authProfile>Administrator</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script" id="37af6728-c370-4b02-a41f-6696e9f9aa70">
+        <con:settings/>
+        <con:config>
+          <script>def response = context.expand( '${Request 1#Response#$[\'name\']}' )
+log.info response
+def response1 = context.expand( '${Request 1#Response#$[\'id\']}' )
+log.info response1
+assert new String(response)=='INDIA'
+def result=2.5064267352
+
+assert (response)=='INDIA'
+assert (response)==context.expand( '${DataSource2#a}' )
+
+log.info new Double(result).round(2) //2.51
+assert new Double(result).round(3)==2.506</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="calltestcase" name="Run TestCase" id="d0abccc5-1a9d-474a-909c-379be607b834">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties/>
+          <con:returnProperties/>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Request 2" id="3a2827c6-a0ca-414f-b19f-2f579fc5e454">
+        <con:settings/>
+        <con:config service="REST Service 1" resourcePath="/api/v1/employee/5436" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Request 2" id="52bbd930-f791-4044-bd56-65a07d26bc4b" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://dummy.restapiexample.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://dummy.restapiexample.com/api/v1/employee/13025</con:originalUri>
+            <con:assertion type="JsonPath Match" id="2cc8004c-d76e-4e8f-8624-ad2a3b0245d1" name="JsonPath Match">
+              <con:configuration>
+                <path>$['employee_salary']</path>
+                <content>23451</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Count" id="719c39b1-8360-4fda-b96a-4e0b1e1ffeff" name="JsonPath Count">
+              <con:configuration>
+                <path>$['employee_salary']</path>
+                <content>1</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="GroovyScriptAssertion" id="70184066-78aa-4be6-9152-3efabbb75344" name="Script Assertion">
+              <con:configuration>
+                <scriptText>def response2 = context.expand( '${Request 2#Response#$[\'id\']}' )</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="9b971dd4-4f7c-4fda-b877-a0c5b2ac07ac" name="Contains">
+              <con:configuration>
+                <token>'*26</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>true</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="317e3ce6-31fe-438e-acd3-14867cba9153" name="Contains 2">
+              <con:configuration>
+                <token>51'*</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>true</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Valid HTTP Status Codes" id="dc2f21db-60be-4ad0-902a-a11f8d507310" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Invalid HTTP Status Codes" id="1c03e726-fc8a-4b26-aa51-8a5ed4df9340" name="Invalid HTTP Status Codes">
+              <con:configuration>
+                <codes>405, 501</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="XQuery Match" id="44d5d088-c53c-47bc-92c4-39fb791612b7" name="XQuery Match">
+              <con:configuration/>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="a9610c20-dc4a-4d86-b55f-5f160a0cf510" name="Response SLA">
+              <con:configuration>
+                <SLA>1500</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath RegEx Match" id="0e4ae70d-d494-4edb-9c46-846331c9edf6" name="JsonPath RegEx Match">
+              <con:configuration>
+                <path>$['id']</path>
+                <content>false</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+                <regEx>'*59</regEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:environmentSpec>
+              <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="c7ce635f-5d29-4dc9-9ca7-ceceb07cee7a">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="DataSource" id="75d4c0a5-59d7-4ae0-9f5f-37bcc864f3fd">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;entry key="a" value="" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="JDBC">
+            <con:configuration>
+              <driver>com.mysql.jdbc.Driver</driver>
+              <connstr>jdbc:mysql://127.0.0.1:3306/order?user=admin&amp;password=PASS_VALUE</connstr>
+              <pass>admin</pass>
+              <Connection/>
+              <query/>
+              <fetchSize/>
+              <stored-procedure>false</stored-procedure>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="jdbc" name="JDBC Request" id="b29d3e6e-c629-4f4f-b601-f5ed73929a72">
+        <con:settings>
+          <con:setting id="prettyPrintResponse">true</con:setting>
+        </con:settings>
+        <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dbConnectionName xsi:nil="true"/>
+          <con:driver>oracle.jdbc.driver.OracleDriver</con:driver>
+          <con:connectionString>jdbc:oracle:thin:admin/PASS_VALUE@127.0.0.1:1521:/sid</con:connectionString>
+          <con:password>admin</con:password>
+          <con:connectionProperties/>
+          <con:properties/>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="DataSource2" id="167304af-c1fe-4930-adc7-c2004af0aa18">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration>
+              <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">INDIA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">IN</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">SRILANKA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SL</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">AUSTRALIA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">AU</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <recognizeAsPlainText>true</recognizeAsPlainText>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>a</con:property>
+          <con:property>b</con:property>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="jdbc" name="JDBC Request2" id="9b6a29c3-0fb0-4a96-b413-fb1da1af25e9">
+        <con:settings>
+          <con:setting id="prettyPrintResponse">true</con:setting>
+        </con:settings>
+        <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:connectionProperties/>
+          <con:properties/>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>e761b696-c306-4f63-824a-27bf8059ebec</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>3a2827c6-a0ca-414f-b19f-2f579fc5e454</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>37af6728-c370-4b02-a41f-6696e9f9aa70</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:environmentSpec>
+        <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:testCase>
+    <con:testCase id="0b2fd0a0-3f58-4c81-86df-f62844ba710f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 2" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="REST Request" id="1ee03db6-1cb4-4272-a29e-e2374fb43994">
+        <con:settings/>
+        <con:config service="http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000" resourcePath="/asset/abcd" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="7ce6caa5-78e3-4516-ab10-e87a11dcbea5" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com/assetwith/d265a918099ac17f077cc9487308c4a119c14d1d704bc6305ce0c0c745fe8d25</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="REST Request1" id="f8001936-316d-45d0-8f4c-e28e523af5d3">
+        <con:settings/>
+        <con:config service="REST Service 1" resourcePath="/api/v1/employee/5436" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request1" id="52bbd930-f791-4044-bd56-65a07d26bc4b" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://dummy.restapiexample.com/</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://dummy.restapiexample.com/api/v1/employee/13025</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:environmentSpec>
+              <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="c7ce635f-5d29-4dc9-9ca7-ceceb07cee7a">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties>
+      <con:property>
+        <con:name>a</con:name>
+        <con:value/>
+      </con:property>
+    </con:properties>
+    <con:reportParameters/>
+    <con:environmentSpec>
+      <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testSuite id="8ac2bf89-59ab-447f-a1ce-e4e4321e992e" name="amazonaws-get-testSuite">
+    <con:description>TestSuite generated for REST Service [REST Service 1]</con:description>
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="c78bd1a9-4efa-4da2-89a2-795f23593d18" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="validation-tc-json-excercise" searchProperties="true">
+      <con:description>TestCase generated for REST Resource [/api/v1/employee/1] located at [/api/v1/employee/5436]</con:description>
+      <con:settings/>
+      <con:testStep type="restrequest" name="GET Request" id="e2dfe925-b61b-423d-a1e8-83c8b0932dd6">
+        <con:settings/>
+        <con:config service="REST Service 1" resourcePath="/api/v1/employee/5436" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GET Request" id="52bbd930-f791-4044-bd56-65a07d26bc4b" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://dummy.restapiexample.com/</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://dummy.restapiexample.com/api/v1/employee/13025</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:environmentSpec>
+              <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="c7ce635f-5d29-4dc9-9ca7-ceceb07cee7a">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script" id="c249971d-49f2-471a-b7ed-9a0328d6c377">
+        <con:settings/>
+        <con:config>
+          <script>import groovy.json.JsonSlurper 
+import static com.jayway.jsonpath.JsonPath.parse
+def countElement( String json, String jsonPath ) {
+	return parse( json ).read( jsonPath ).size()
+}
+def inputText = testRunner.testCase.testSteps['GET Request'].getPropertyValue('Response')
+//log.info inputText
+	//String jsonFormattedString = inputText.replaceAll("/", "");
+	//log.info jsonFormattedString
+	int ncountCountry= countElement( inputText, '$.offices[*].country' )
+	int ncountIndia=0
+	int ncountMalaysia=0
+	int ncountUS=0
+      def jsonSlurper = new JsonSlurper()
+      def object = jsonSlurper.parseText(inputText) 
+      log.info object
+      for (i=0; i&lt;ncountCountry; i++){
+      def countryname=object.offices.country[i]
+      //log.info object.offices.Office[i]
+      if(countryname=='India'){
+      	++ncountIndia
+      }
+      else if(countryname=='Malaysia'){
+      	++ncountMalaysia
+      	if(object.offices.Office[i]=='Langkawi'){
+      	log.info 'I have an office in Langkawi, Malaysia'
+      }
+      }
+      else if(countryname=='US'){
+      	++ncountUS
+      }
+      }
+      log.info 'India:'+ncountIndia
+      log.info 'Malaysia:'+ncountMalaysia
+      log.info 'US:'+ncountUS
+      
+      //int a= countElement( inputText, '$.offices[*].country' )</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script2" id="68da8a74-6190-4450-b393-12ee31e69e2d">
+        <con:settings/>
+        <con:config>
+          <script><![CDATA[import groovy.json.JsonSlurper 
+import static com.jayway.jsonpath.JsonPath.parse
+def countElement( String json, String jsonPath ) {
+	return parse( json ).read( jsonPath ).size()
+}
+def inputText = testRunner.testCase.testSteps['GET Request'].getPropertyValue('Response')
+//log.info inputText
+	//String jsonFormattedString = inputText.replaceAll("/", "");
+	//log.info jsonFormattedString
+	int ncountCountry= countElement( inputText, '$.offices[*].country' )
+      def jsonSlurper = new JsonSlurper()
+      def object = jsonSlurper.parseText(inputText) 
+// typical Groovy
+
+def countrymap  = [:]
+def officemap  = [:]
+def countrylist = []
+def officelist = []
+//list3 << "hello"
+for (i=0; i<ncountCountry; i++){
+      countrylist << object.offices.country[i]
+     // officelist << object.offices.Office[i]
+     if(object.offices.country[i]=='Malaysia'){
+     	officelist << object.offices.Office[i]
+     }
+     
+    }
+    
+countrymap.'countryname'= countrylist
+//log.info officelist
+officemap.'officename'=officelist
+//officemap.'officename'= officelist
+//assert map3.'abc' == list3
+//log.info countrymap
+log.info countrylist.count { it.contains('India') } 
+log.info countrylist.count { it.contains('US') } 
+log.info countrylist.count { it.contains('Malaysia') } 
+if(officemap.officename.contains('Langkawi')){
+	log.info 'found'
+}]]></script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script3" id="34775758-65d8-4786-b369-23fa6cec681d">
+        <con:settings/>
+        <con:config>
+          <script><![CDATA[import java.util.*;
+import groovy.json.JsonSlurper 
+import static com.jayway.jsonpath.JsonPath.parse
+def countElement( String json, String jsonPath ) {
+	return parse( json ).read( jsonPath ).size()
+}
+def inputText = testRunner.testCase.testSteps['GET Request'].getPropertyValue('Response')
+	int ncountCountry= countElement( inputText, '$.offices[*].country' )
+      def jsonSlurper = new JsonSlurper()
+      def object = jsonSlurper.parseText(inputText) 
+HashMap<String, Set> countrymap = new HashMap(); 
+Set<String> officeName = new HashSet();
+officeName.add(object.offices.Office[0]);
+countrymap.put(object.offices.country[0],officeName); 
+log.info countrymap
+for (i=1; i<ncountCountry; i++){
+		String keyToBeChecked = object.offices.country[i]; 
+		String valueToBeChecked = object.offices.Office[i]; 
+
+		// Get the iterator over the HashMap 
+		Iterator<Map.Entry<String, Set> >iterator = countrymap.entrySet().iterator(); 
+
+		// flag to store result 
+		boolean isKeyPresent = false; 
+
+		// Iterate over the HashMap 
+		while (iterator.hasNext()) { 
+
+			// Get the entry at this iteration 
+			Map.Entry<String, Set>entry = iterator.next(); 
+
+			// Check if this key is the required key 
+			if (keyToBeChecked != entry.getKey()) { 
+		
+				
+					officeName.add(valueToBeChecked);
+				countrymap.put(keyToBeChecked,officeName );	
+						
+			} 
+			else{
+				countrymap.get(keyToBeChecked).add(valueToBeChecked);
+				 isKeyPresent = true; 
+				log.info("Does key "+ keyToBeChecked + " exists: "+ isKeyPresent); 
+				
+			}
+			log.info countrymap
+			 //log.info keyToBeChecked
+		} 
+
+}
+log.info countrymap]]></script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script4" id="03d545df-57de-48a6-b737-07717f545fa8">
+        <con:settings/>
+        <con:config>
+          <script>import java.util.*;
+import groovy.json.JsonSlurper 
+import static com.jayway.jsonpath.JsonPath.parse
+def countElement( String json, String jsonPath ) {
+	return parse( json ).read( jsonPath ).size()
+}
+def inputText = testRunner.testCase.testSteps['GET Request'].getPropertyValue('Response')
+	int ncountCountry= countElement( inputText, '$.offices[*].country' )
+      def jsonSlurper = new JsonSlurper()
+      def object = jsonSlurper.parseText(inputText) 
+HashMap&lt;String, Set> countrymap = new HashMap(); 
+Set&lt;String> officeName = new HashSet();
+
+log.info countrymap
+for (i=0; i&lt;ncountCountry; i++){
+		String keyToBeChecked = object.offices.country[i]; 
+		String valueToBeChecked = object.offices.Office[i]; 
+
+			if (countrymap.containsKey(keyToBeChecked)==false) { 
+				countrymap.put(keyToBeChecked,[] );	
+				 officeName.add(valueToBeChecked);
+				//countrymap.put(keyToBeChecked,officeName );	
+				countrymap.get(keyToBeChecked).add(valueToBeChecked);
+				//log.info 'hello-if'
+						
+			} 
+			else{
+				countrymap.get(keyToBeChecked).add(valueToBeChecked);
+				//log.info 'hello-else'
+				//log.info countrymap
+				
+			}
+			
+}
+log.info countrymap
+log.info countrymap.get('India').size()
+log.info countrymap.get('Malaysia').size()
+log.info countrymap.get('US').size()
+log.info countrymap.get('China').size()
+if(countrymap.Malaysia.contains('Langkawi')){
+	log.info 'found'
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script5" id="6c8a530c-3f38-4407-a379-77596a09ae30">
+        <con:settings/>
+        <con:config>
+          <script><![CDATA[import groovy.json.JsonSlurper 
+import java.util.concurrent.ConcurrentHashMap
+import java.util.* 
+
+def Output=testRunner.testCase.testSteps["GET Request"].getPropertyValue("Response")
+def json1 = new JsonSlurper().parseText(Output)
+
+HashMap< String, Set > map = new HashMap();
+HashMap< String, Set > CountryOfficeMap = new HashMap();
+HashMap< String, Set > CountryMap = new HashMap();
+
+
+HashSet < String > officeset = new HashSet();
+for(node=0;node<=json1.offices.size-1;node++){
+	 String CountryName= json1.offices[node].country
+      String OfficeLocation= json1.offices[node].Office
+      
+			map.put(OfficeLocation, CountryName)
+
+			if (CountryOfficeMap.containsKey(CountryName))
+			{
+				CountryOfficeMap.put(CountryName,CountryOfficeMap.get(CountryName)+1)
+			}
+			else
+			{
+				CountryOfficeMap.put(CountryName,1)	
+			}
+			
+
+			if (CountryMap.containsKey(CountryName))
+			{
+				CountryMap.put(CountryName,CountryMap.get(CountryName)+","+ OfficeLocation)
+			}
+			else
+			{
+				CountryMap.put(CountryName,OfficeLocation)	
+			}
+            
+            	
+            }
+            
+           
+
+	int nOfficeCtr = 0
+	String[] sOfficeCount
+	for (nOfficeCtr=0; nOfficeCtr < CountryMap.size(); nOfficeCtr++)
+	{
+		
+		sOfficeCount = CountryMap.get( (CountryMap.keySet().toArray())[ nOfficeCtr ] ).split(",")
+		log.info sOfficeCount.size()
+	}
+log.info CountryMap]]></script>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="5b918b14-476e-4370-9382-411a78e8ba8f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="amazonaws-get-requests" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="no-of-blocks" id="4898dbf1-da6e-4e15-9d30-6ff0fd5b632a">
+        <con:settings/>
+        <con:config service="http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000" resourcePath="/numberofblocks/" methodName="Numberofblocks 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="no-of-blocks" id="9cebc0aa-ccfd-44c9-8a44-37901483c1ce" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com/numberofblocks/</con:originalUri>
+            <con:assertion type="GroovyScriptAssertion" id="2530e0dc-0087-4e83-a025-cbc11ffe78e0" name="Script Assertion">
+              <con:configuration>
+                <scriptText>def statusCode = messageExchange.getResponseHeaders()["#status#"][0][9..11]
+log.info statusCode
+assert statusCode=='200'</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="get-assets" id="1cd2097d-a886-44be-9372-e1712c94bb9e">
+        <con:settings/>
+        <con:config service="http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000" resourcePath="/getassets" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="get-assets" id="2d1224e5-71ab-46f2-96aa-613062641f85" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com/getassets</con:originalUri>
+            <con:assertion type="GroovyScriptAssertion" id="03ea6cde-2a2b-4177-9489-ee19d65921a3" name="Script Assertion">
+              <con:configuration>
+                <scriptText>def statusCode = messageExchange.getResponseHeaders()["#status#"][0][9..11]
+log.info statusCode
+assert statusCode=='200'</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="getproducts" id="acf3270b-1f53-4761-a21f-8eb2027c8b90">
+        <con:settings/>
+        <con:config service="http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000" resourcePath="/getproducts/" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="getproducts" id="afdc500e-2232-4a3d-910c-a60f4c5ec6fe" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com/getproducts/</con:originalUri>
+            <con:assertion type="GroovyScriptAssertion" id="41d7cfd0-7e4a-4e7f-b1d1-6539ec1c898c" name="Script Assertion">
+              <con:configuration>
+                <scriptText>def statusCode = messageExchange.getResponseHeaders()["#status#"][0][9..11]
+log.info statusCode
+assert statusCode=='200'</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="getasset-prodwise" id="447ee622-4a02-4054-86f1-b0676341f76b">
+        <con:settings/>
+        <con:config service="http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000" resourcePath="/getasset/84ef2690-b75f-40be-b3e2-f735218673c5" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="getasset-prodwise" id="f5d0c4d1-a04f-49ac-8638-2c0cab757809" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com/getasset/84ef2690-b75f-40be-b3e2-f735218673c5</con:originalUri>
+            <con:assertion type="GroovyScriptAssertion" id="92e11028-14b4-43f7-8fac-95124b1af026" name="Script Assertion">
+              <con:configuration>
+                <scriptText>def statusCode = messageExchange.getResponseHeaders()["#status#"][0][9..11]
+log.info statusCode
+assert statusCode=='200'</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="b2759e4e-32f9-4512-b6c0-57f81f3f016b" name="Response SLA">
+              <con:configuration>
+                <SLA>2000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Valid HTTP Status Codes" id="5fcd17ef-1437-470e-96cc-22666d520bb8" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="e03f8564-03e4-439f-b2db-2de97d25fd8b" name="JsonPath Match">
+              <con:configuration>
+                <path>$[0].mfc_date</path>
+                <content>12-11-2018</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Count" id="9dd369b5-8bf1-4510-9977-40b30f7f3306" name="JsonPath Count">
+              <con:configuration>
+                <path>$</path>
+                <content>10</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="get-id-wise-asset" id="1c439bca-49d2-4779-ac4e-1d3b50735496">
+        <con:settings/>
+        <con:config service="http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000" resourcePath="/asset/d265a918099ac17f077cc9487308c4a119c14d1d704bc6305ce0c0c745fe8d25" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="get-id-wise-asset" id="2a04b125-0eaf-40c7-9a38-2fb8f79c7c51" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com/asset/d265a918099ac17f077cc9487308c4a119c14d1d704bc6305ce0c0c745fe8d25</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="e41eeb7c-49de-4809-b4c5-5055d54bbf6f" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="assetWith-assetKey" id="a5027959-3ea4-48d2-8704-2064b1616686">
+        <con:settings/>
+        <con:config service="http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000" resourcePath="/assetwith/d265a918099ac17f077cc9487308c4a119c14d1d704bc6305ce0c0c745fe8d25" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="assetWith-assetKey" id="7ce6caa5-78e3-4516-ab10-e87a11dcbea5" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com/assetwith/d265a918099ac17f077cc9487308c4a119c14d1d704bc6305ce0c0c745fe8d25</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="4344b9df-3e89-4720-82bf-4263ef766232" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="get-id-wise-asset-with-wrong-assetid" id="9ec7096b-f1de-48a6-8879-243683cb5d2e">
+        <con:settings/>
+        <con:config service="http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000" resourcePath="/asset/abcd" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="get-id-wise-asset-with-wrong-assetid" id="387e0ff9-10d9-47bf-99e3-f365dbd5237c" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com/asset/abcd</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="9d37614d-0dfd-4def-bafd-7a01a9ca27b6" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>500</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="GroovyScriptAssertion" id="d6a17431-f4cd-401e-b8e3-d894ac08509c" name="Script Assertion">
+              <con:configuration>
+                <scriptText>def statusCode = messageExchange.getResponseHeaders()["#status#"][0][9..11]
+log.info statusCode
+assert statusCode=='500'</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="get-assets-Validation-Script" id="183d1705-6e42-43b9-b734-6c06ab682e4c">
+        <con:settings/>
+        <con:config>
+          <script>import java.util.*;
+import groovy.json.JsonSlurper 
+def inputText = testRunner.testCase.testSteps['getasset-prodwise'].getPropertyValue('Response')
+def jsonSlurper = new JsonSlurper()
+def object = jsonSlurper.parseText(inputText) 
+
+ArrayList&lt;String> dates = new ArrayList();
+HashMap&lt; String, Set >assetmap = new HashMap();
+HashMap&lt; String, Set >status = new HashMap();
+
+for(i=0; i&lt;object.size(); i++){
+	String datevalue=object.mfc_date[i]
+	String statusvalue=object.status[i]
+dates.add(datevalue)
+if (assetmap.containsKey(datevalue))
+			{
+				assetmap.put(datevalue,assetmap.get(datevalue)+1)
+			}
+			else
+			{
+				assetmap.put(datevalue,1)	
+			}
+			if (status.containsKey(datevalue))
+			{
+				status.put(datevalue,status.get(datevalue)+""+ statusvalue)
+			}
+			else
+			{
+				status.put(datevalue,statusvalue)	
+			}
+}
+log.info dates
+log.info assetmap
+log.info status
+assert dates.size()==object.size()
+int ndatecount=Integer.parseInt( context.expand('${testData#datecount}'))
+assert assetmap.get('12-11-2018')== ndatecount
+assert status.get('12-11-2018').size()==ndatecount
+assert status.get('12-11-2018').contains('A')==true
+log.info 'execution completed'</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="properties" name="testData" id="cbe705c7-c328-4ad8-a83c-4c425abe7bf6">
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties>
+            <con:property>
+              <con:name>datecount</con:name>
+              <con:value>10</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="check-json-response-key-existance" id="ee93b848-4201-4f83-a377-3d7c2c6db5f8">
+        <con:settings/>
+        <con:config>
+          <script>import groovy.json.JsonSlurper 
+import java.util.*;
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext
+
+def addteststep=testRunner.testCase.testSteps['getproducts']
+def addstepcontext=new WsdlTestRunContext(addteststep)
+addteststep.run(testRunner,addstepcontext)
+def jsonoutput = testRunner.testCase.testSteps['getproducts'].getPropertyValue('Response')
+def parsedjson = new JsonSlurper().parseText(jsonoutput)
+Properties properties = new Properties()
+File propertiesFile = new File("C:\\Users\\surathsvst\\Desktop\\testData.properties")
+propertiesFile.withInputStream {
+    properties.load(it)
+}
+Enumeration e = properties.propertyNames();
+
+    for (; e.hasMoreElements();) {
+      log.info(e.nextElement());
+
+    }
+for(int block=0;block&lt;parsedjson.size();block++){
+for(int node=1;node&lt;=parsedjson[block].size();node++){
+	log.info properties.("key_"+node)
+assert jsonoutput.contains(properties.("key_"+node)) == true
+}
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:requirements/>
+  <con:properties>
+    <con:property>
+      <con:name>b</con:name>
+      <con:value>222</con:value>
+    </con:property>
+    <con:property>
+      <con:name>endp</con:name>
+      <con:value>http://ec2-18-223-33-112.us-east-2.compute.amazonaws.com:8000</con:value>
+    </con:property>
+    <con:property>
+      <con:name>resource1</con:name>
+      <con:value>getassets/266ad9d2-d390-4df9-9e4a-ef8ef4c164ee</con:value>
+    </con:property>
+  </con:properties>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// def token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// def token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// def headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.beforeStep" name="TestRunListener.beforeStep" target="Request2">
+    <con:script>log.info("hello")</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="SubmitListener.beforeSubmit" name="SubmitListener.beforeSubmit">
+    <con:script>def response1 = context.expand( '${Request 1#Response#$[\'id\']}' )
+log.info submit.request.getPath()
+submit.request.setPath("/product/api/v4.0/foo")
+log.info submit.request.getPath()</con:script>
+  </con:eventHandlers>
+  <con:environment id="01579c42-fc3b-46cd-ba9f-47facd580a3f" name="aa">
+    <con:service type="REST" name="http://dummy.restapiexample.com">
+      <con:endpoint authProfile="No Authorization">http://dummy.restapiexample.com</con:endpoint>
+    </con:service>
+    <con:service type="REST" name="REST Service 1">
+      <con:endpoint authProfile="No Authorization">http://dummy.restapiexample.com</con:endpoint>
+    </con:service>
+    <con:property>
+      <con:name>b</con:name>
+      <con:value/>
+    </con:property>
+    <con:databaseConnectionContainer/>
+    <con:jmsConnectionContainer/>
+  </con:environment>
+  <con:environment id="c7ce635f-5d29-4dc9-9ca7-ceceb07cee7a" name="cc">
+    <con:service type="REST" name="http://dummy.restapiexample.com">
+      <con:endpoint authProfile="Inherit From Parent" username="" password="" domain="" incomingWss="" outgoingWss="" wssTimeToLive="" wssType="">http://dummy.restapiexample.com</con:endpoint>
+    </con:service>
+    <con:service type="REST" name="REST Service 1">
+      <con:endpoint authProfile="Inherit From Parent"/>
+    </con:service>
+    <con:property>
+      <con:name>b</con:name>
+      <con:value>222</con:value>
+    </con:property>
+    <con:databaseConnectionContainer/>
+    <con:jmsConnectionContainer/>
+  </con:environment>
+  <con:authRepository>
+    <con:basicAuthEntry>
+      <con:name>Administrator</con:name>
+      <con:type>Basic</con:type>
+      <con:username>admin</con:username>
+      <con:password>admin</con:password>
+    </con:basicAuthEntry>
+  </con:authRepository>
+  <con:environmentSpec>
+    <con:entry environmentId="01579c42-fc3b-46cd-ba9f-47facd580a3f">
+      <con:authProfile>No Authorization</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+  <con:tags/>
+</con:soapui-project>
